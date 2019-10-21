@@ -100,29 +100,29 @@ public class Main {
 
         int j = year / 100;
         int k = year % 100;
-        int h = (q + (26/10*(m + 1)) + k + (k / 4) + (j / 4) + 5*j ) % 7;
+        int h = (int) (q + (2.6*(m + 1)) + k + (k / 4) + (j / 4) - 2*j ) % 7 ;
         System.out.println(q + " - " + m + " - " + k + " - " + j + " - " + h);
         switch (h) {
             case 0:
-                System.out.println("Day of the week is Sunday");
+                System.out.println("Day of the week is Saturday");
                 break;
             case 1:
-                System.out.println("Day of the week is Monday");
+                System.out.println("Day of the week is Sunday");
                 break;
             case 2:
-                System.out.println("Day of the week is Tuesday");
+                System.out.println("Day of the week is Monday");
                 break;
             case 3:
-                System.out.println("Day of the week is Wednesday");
+                System.out.println("Day of the week is Tuesday");
                 break;
             case 4:
-                System.out.println("Day of the week is Thursday");
+                System.out.println("Day of the week is Wednesday");
                 break;
             case 5:
-                System.out.println("Day of the week is Friday");
+                System.out.println("Day of the week is Thursday");
                 break;
             case 6:
-                System.out.println("Day of the week is Saturday");
+                System.out.println("Day of the week is Friday");
                 break;
         }
 

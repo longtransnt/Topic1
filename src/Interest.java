@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class interest {
+public class Interest {
     public static void main(String[] args) {
         System.out.print("Please input a monthly saving amount: ");
         Scanner input = new Scanner(System.in);
